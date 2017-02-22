@@ -8,7 +8,7 @@ foobar
 foobaz
 fooboo`
 // var regex = /\(?(\d{3})\)?[\s-]?\d{3}[\s-]?\d{4}/g;
-const regex = /foo(bar|boo)/g
+const regex = /foo(bar|boo)?/g
 
 console.log(str.replace(regex, 'area code: $1'))
 
