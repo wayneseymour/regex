@@ -1,7 +1,7 @@
 'use strict';
 
 const str = `Aeiou $100 55.5%`;
-const regex = /\D/g
+const regex = /\S/g
 
 /**
  * @param  String str
