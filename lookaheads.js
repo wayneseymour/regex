@@ -4,8 +4,6 @@ const str = `foo
 foobar
 foobaz
 fooboo`
-const regex = /foo(?=bar|boo)/g // foo not followed by
-// bar, nor boo
 
 /**
  * @param  String str
@@ -22,5 +20,10 @@ const output = (str, regex, target) => {
 const qs = document.querySelector.bind(document)
 const outStr = output.bind(null, str)
 
-outStr(/foo(?=bar|boo)/g, qs('.a')); // positive lookahead
-outStr(/foo(?!bar|boo)/g, qs('.b')); // negative lookahead
+const data = [
+  ['foo(?=bar|boo)', '.a'], // positive lookahead
+  ['foo(?!bar|boo)', '.b']  // negative lookahead
+]
+  .forEach(xs =>
+    outStr( new RegExp(xs[0], 'g'), qs(xs[1]) )
+  )
