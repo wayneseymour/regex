@@ -1,16 +1,13 @@
 'use strict';
 
-// var str = `800-456-7890
-// (555) 456-7890
-// 4564567890`;
-const str = `foo
-foobar
-foobaz
-fooboo`
-// var regex = /\(?(\d{3})\)?[\s-]?\d{3}[\s-]?\d{4}/g;
-const regex = /foo(bar|boo)?/g
+const str = `800-456-7890
+(555) 456-7890
+4564567890`
 
-console.log(str.replace(regex, 'area code: $1'))
+const regex = /\(?(\d{3})\)?[\s-]?\d{3}[\s-]?\d{4}/g
+
+console.log(str.replace(regex, 'area code: $1')) // Reference to the capture group `$`,
+// and a numeric index of our capture groups (1 based, not zero based).
 
 /**
  * @param  String str
