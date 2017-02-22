@@ -4,7 +4,7 @@ const str = `foo
 foobar
 foobaz
 fooboo`
-const regex = /foo(?!bar|boo)/g // foo not followed by
+const regex = /foo(?=bar|boo)/g // foo not followed by
 // bar, nor boo
 
 /**
@@ -18,4 +18,9 @@ const output = (str, regex, target) => {
       `<span>${str}</span>`
     );
 }
-output(str, regex, document.querySelector('pre'));
+
+const qs = document.querySelector.bind(document)
+const outStr = output.bind(null, str)
+
+outStr(/foo(?=bar|boo)/g, qs('.a')); // positive lookahead
+outStr(/foo(?!bar|boo)/g, qs('.b')); // negative lookahead
