@@ -1,7 +1,7 @@
 'use strict';
 
-var str = `cat mat bat Hat ?at 0at`;
-var regex = /[a-z]at/g  // characer class range (a thru z)
+var str = `at cat mat bat Hat ?at 0at`;
+var regex = /[a-zA-Z]at/g  // characer class range UNION (a thru z and A thru Z)
 
 /**
  * @param  String str
