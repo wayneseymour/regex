@@ -1,7 +1,7 @@
 'use strict';
 
 var str = `cat mat bat Hat ?at 0at`;
-var regex = /[^cb]at/g  // everything except cat and bat; negated captures that start with 'c' or 'b'
+var regex = /[a-z]at/g  // characer class range (a thru z)
 
 /**
  * @param  String str
