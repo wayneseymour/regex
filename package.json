@@ -1,0 +1,12 @@
+{
+  "name": "regex",
+  "version": "1.0.0",
+  "description": "Regex research; again. :)",
+  "main": "index.html",
+  "repository": "git@github.com:wayneseymour/regex.git",
+  "author": "Wayne Kenneth Seymour III <wayneseymour@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "puer": "^1.1.1"
+  }
+}
