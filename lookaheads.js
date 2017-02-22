@@ -4,7 +4,8 @@ const str = `foo
 foobar
 foobaz
 fooboo`
-const regex = /foo(?!bar|boo)/g
+const regex = /foo(?!bar|boo)/g // foo not followed by
+// bar, nor boo
 
 /**
  * @param  String str
