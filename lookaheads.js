@@ -1,10 +1,10 @@
 'use strict';
 
-var str = `foo
+const str = `foo
 foobar
 foobaz
 fooboo`
-var regex = /foo(?!bar|boo)/g
+const regex = /foo(?!bar|boo)/g
 
 /**
  * @param  String str
