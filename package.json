@@ -6,7 +6,7 @@
   "repository": "git@github.com:wayneseymour/regex.git",
   "author": "Wayne Kenneth Seymour III <wayneseymour@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "puer": "^1.1.1"
+  "devDependencies": {
+    "puer": "1.1.1"
   }
 }

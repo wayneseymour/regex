@@ -1,7 +1,7 @@
 'use strict';
 
 const str = `Aeiou $100 55.5%`;
-const regex = /\S/g
+const regex = /\S/g;
 
 /**
  * @param  String str
@@ -9,9 +9,6 @@ const regex = /\S/g
  * @param  HTMLElement target
  */
 const output = (str, regex, target) => {
-  target.innerHTML =
-    str.replace(regex, str =>
-      `<span>${str}</span>`
-    );
-}
+  target.innerHTML = str.replace(regex, str => `<span>${str}</span>`);
+};
 output(str, regex, document.querySelector('pre'));
