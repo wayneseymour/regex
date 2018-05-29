@@ -6,7 +6,11 @@
   "repository": "git@github.com:wayneseymour/regex.git",
   "author": "Wayne Kenneth Seymour III <wayneseymour@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
   "devDependencies": {
+    "jest": "^23.0.1",
     "puer": "1.1.1"
   }
 }
